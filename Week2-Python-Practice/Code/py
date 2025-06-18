@@ -1,0 +1,43 @@
+# ✅ Modules and pip practice, 18th June 2024
+
+import math
+print("Square root of 25 is:", math.sqrt(25))
+
+import random
+print("Random number between 1 and 10:", random.randint(1, 10))
+
+import pandas as pd
+data = {'Name': ['Aman', 'Nina'], 'Age': [21, 23]}
+df = pd.DataFrame(data)
+df.to_csv('students_scores.csv', index=False)
+print("CSV file created!")
+
+# ✅ Classes & Objects Practice
+
+class Student:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+
+    def show(self):
+        print(f"{self.name} scored {self.grade}")
+
+s1 = Student("Ishrat", 99)
+s2 = Student("Sitara", 92)
+s1.show()
+s2.show()
+
+# ✅ My First Independent Project
+
+class Rabbit:
+    def __init__(self, name, type, color, age):
+        self.name = name
+        self.type = type
+        self.color = color
+        self.age = age
+
+    def bunny(self):
+        print(f"{self.name} the {self.color} bunny says: I was hiding under the bush in the garden, then they found me and I found my forever home 🏠!")
+
+b = Rabbit("snowball", "bunny", "white", "1")
+b.bunny()
